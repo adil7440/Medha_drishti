@@ -24,8 +24,28 @@ vol = st.session_state['vol_enhanced']
 mask = st.session_state['mask']
 z = st.slider("Z-Slice", 0, vol.shape[0]-1, result['measurements']['Most_Affected_Slice'])
 fig = go.Figure(data=go.Heatmap(z=vol[z], colorscale='gray', showscale=False))
+import cv2
+
 if np.any(mask[z]):
-    fig.add_trace(go.Heatmap(z=np.where(mask[z]>0, 1, None), colorscale=[[0, 'rgba(0,0,0,0)'],[1, 'rgba(16,185,129,0.5)']], showscale=False))
+    # Extract contours for "proper lines or outlines" aesthetic
+    mask_slice = (mask[z] > 0).astype(np.uint8)
+    contours, _ = cv2.findContours(mask_slice, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    
+    for contour in contours:
+        if len(contour) > 2:
+            x = contour[:, 0, 0]
+            y = contour[:, 0, 1]
+            # Close the loop
+            x = np.append(x, x[0])
+            y = np.append(y, y[0])
+            
+            fig.add_trace(go.Scatter(
+                x=x, y=y,
+                mode='lines',
+                line=dict(color='#ef4444', width=2.5), # Vibrant Red Outline
+                hoverinfo='skip',
+                showlegend=False
+            ))
 fig.update_layout(width=600, height=600, margin=dict(l=0,r=0,b=0,t=0), paper_bgcolor=DARK_BG, plot_bgcolor=DARK_BG)
 fig.update_yaxes(autorange="reversed")
 st.plotly_chart(fig, use_container_width=True)
