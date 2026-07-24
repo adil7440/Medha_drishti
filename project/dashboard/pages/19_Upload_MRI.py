@@ -22,6 +22,8 @@ if uploaded_file:
     file_path = uploads_dir / uploaded_file.name
     with open(file_path, "wb") as f: f.write(uploaded_file.getbuffer())
     
+    modality_override = st.selectbox("Select MRI Modality (Overrides Auto-Detection)", ["Auto-Detect", "Brain", "Spine"])
+    
     st.success("File uploaded successfully. Initializing AI Pipeline...")
     
     if st.button("▶ Run Full AI Diagnosis Pipeline (Stages 2, 3, 4)", type="primary"):
@@ -32,7 +34,11 @@ if uploaded_file:
             
         with st.spinner("Executing Full Medical Pipeline..."):
             pipeline = MedicalOrchestrator("project")
-            result, vol, vol2, vol3, mask = pipeline.analyze_mri(str(file_path), progress_callback=update_progress)
+            
+            # Pass modality override if user selected it
+            selected_modality = None if modality_override == "Auto-Detect" else modality_override
+            
+            result, vol, vol2, vol3, mask = pipeline.analyze_mri(str(file_path), modality=selected_modality, progress_callback=update_progress)
             progress_bar.progress(1.0, text="Pipeline Execution Complete!")
             
             st.session_state['stage4_result'] = result

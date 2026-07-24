@@ -21,10 +21,14 @@ if 'stage4_result' not in st.session_state:
 result = st.session_state['stage4_result']
 
 color = "#10b981" if result["disease_class"] == "Normal" else "#ef4444"
-st.markdown(f"""
+html_block = f"""
 <div style="background: rgba({239 if color=='#ef4444' else 16}, {68 if color=='#ef4444' else 185}, {68 if color=='#ef4444' else 129}, 0.1); 
             border: 2px solid {color}; border-radius: 12px; padding: 30px; text-align: center;">
-    <h2 style="color: {color};">{result['diagnosis']}</h2>
-    <h3>Severity: {result['severity']}</h3>
+    <h3 style="color: #9ca3af; margin-bottom: 5px; font-weight: normal;">Disease Class:</h3>
+    <h1 style="color: {color}; margin-top: 0; font-size: 42px;">{result['disease_class']}</h1>
+    <hr style="border-color: {color}; opacity: 0.3; margin: 20px 0;">
+    <h4 style="color: #9ca3af; margin-bottom: 5px; font-weight: normal;">Diagnosis:</h4>
+    <h2 style="color: {color}; margin-top: 0;">{result['diagnosis']}</h2>
 </div>
-""", unsafe_allow_html=True)
+"""
+st.markdown(html_block, unsafe_allow_html=True)

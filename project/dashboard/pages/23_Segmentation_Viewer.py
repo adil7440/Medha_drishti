@@ -46,6 +46,26 @@ if np.any(mask[z]):
                 hoverinfo='skip',
                 showlegend=False
             ))
+            
+            # Calculate centroid to point the arrow at the affected zone
+            M = cv2.moments(contour)
+            if M['m00'] != 0:
+                cx = int(M['m10'] / M['m00'])
+                cy = int(M['m01'] / M['m00'])
+                
+                # Add clinical arrow pointing to the lesion/herniation
+                fig.add_annotation(
+                    x=cx, y=cy,
+                    ax=cx + 50, ay=cy - 50, # Offset the tail of the arrow
+                    xref="x", yref="y",
+                    axref="x", ayref="y",
+                    showarrow=True,
+                    arrowhead=2,
+                    arrowsize=2,
+                    arrowwidth=3,
+                    arrowcolor="#ef4444", # Red arrow matching reference image
+                    text="" # No text, just the arrow
+                )
 fig.update_layout(width=600, height=600, margin=dict(l=0,r=0,b=0,t=0), paper_bgcolor=DARK_BG, plot_bgcolor=DARK_BG)
 fig.update_yaxes(autorange="reversed")
 st.plotly_chart(fig, use_container_width=True)
