@@ -1,0 +1,51 @@
+{
+  "model_name": "DnCNN",
+  "total_train_time_sec": 33.16,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.295789,
+      "val_loss": 0.062923,
+      "val_psnr": 22.21,
+      "learning_rate": 9.05463412215599e-05,
+      "epoch_time_sec": 6.56,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.196335,
+      "val_loss": 0.130139,
+      "val_psnr": 22.34,
+      "learning_rate": 6.57963412215599e-05,
+      "epoch_time_sec": 6.79,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.152104,
+      "val_loss": 0.079446,
+      "val_psnr": 22.31,
+      "learning_rate": 3.52036587784401e-05,
+      "epoch_time_sec": 6.62,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.105098,
+      "val_loss": 0.109767,
+      "val_psnr": 21.46,
+      "learning_rate": 1.0453658778440105e-05,
+      "epoch_time_sec": 6.6,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.095134,
+      "val_loss": 0.074036,
+      "val_psnr": 20.02,
+      "learning_rate": 1e-06,
+      "epoch_time_sec": 6.58,
+      "gpu_mem_mb": 0.0
+    }
+  ]
+}

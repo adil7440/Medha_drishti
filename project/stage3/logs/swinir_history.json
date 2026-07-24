@@ -1,0 +1,51 @@
+{
+  "model_name": "SwinIR",
+  "total_train_time_sec": 47.21,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.327843,
+      "val_loss": 0.278802,
+      "val_psnr": 14.41,
+      "learning_rate": 9.05463412215599e-05,
+      "epoch_time_sec": 9.55,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.214211,
+      "val_loss": 0.280679,
+      "val_psnr": 15.26,
+      "learning_rate": 6.57963412215599e-05,
+      "epoch_time_sec": 9.4,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.26334,
+      "val_loss": 0.325,
+      "val_psnr": 13.47,
+      "learning_rate": 3.52036587784401e-05,
+      "epoch_time_sec": 9.34,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.246394,
+      "val_loss": 0.190446,
+      "val_psnr": 19.31,
+      "learning_rate": 1.0453658778440105e-05,
+      "epoch_time_sec": 9.28,
+      "gpu_mem_mb": 0.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.136615,
+      "val_loss": 0.136224,
+      "val_psnr": 21.14,
+      "learning_rate": 1e-06,
+      "epoch_time_sec": 9.59,
+      "gpu_mem_mb": 0.0
+    }
+  ]
+}
