@@ -1,0 +1,11 @@
+Patient_ID,Class,Status,Total_Files,Volume_Count,Has_T1W,Has_T2W,Has_STIR,Has_Survey,Total_Size_MB,Computed_Size_MB,Modalities_Detected
+SP2,Normal,Complete,16,16,True,True,True,True,18.24,18.24,"STIR, Survey, T1W, T2W"
+SP3,Normal,Complete,34,34,True,True,False,False,24.22,24.22,"T1W, T2W"
+SP5,Normal,Complete,5,5,True,True,True,False,11.12,11.12,"STIR, T1W, T2W"
+SP7,Normal,Complete,19,19,True,True,True,False,18.9,18.9,"STIR, T1W, T2W"
+SP8,Normal,Complete,16,16,True,True,True,False,29.59,29.59,"STIR, T1W, T2W"
+SP12,Pathological,Complete,34,34,True,True,True,False,37.55,37.54,"STIR, T1W, T2W"
+SP15,Pathological,Complete,11,11,True,True,True,False,29.44,29.44,"STIR, T1W, T2W"
+SP17,Pathological,Complete,17,17,True,True,False,False,32.84,32.84,"T1W, T2W"
+SP18,Pathological,Complete,21,21,True,True,True,False,18.07,18.06,"STIR, T1W, T2W"
+SP19,Pathological,Complete,13,13,True,True,False,True,14.03,14.03,"Survey, T1W, T2W"

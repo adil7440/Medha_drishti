@@ -1,0 +1,6 @@
+Modality,Volume_Count,Average_Intensity,Median_Intensity,Min_Intensity,Max_Intensity,Average_Contrast,Average_Entropy,Average_Sharpness,Average_Noise,Average_SNR,Average_Edge_Strength,Typical_Dimensions,Typical_Voxel_Spacing,Average_File_Size_MB
+FLAIR,369,460.41,462.72,-7.94,32767.0,0.3395,6.3386,0.007599,0.0,45888162.8641,0.108493,240 x 240 x 155,1.0 x 1.0 x 1.0 mm,18.6
+SEG,369,0.02,0.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0,0.0,240 x 240 x 155,1.0 x 1.0 x 1.0 mm,11.15
+T1,369,675.1,696.06,0.0,32767.0,0.2514,6.546,0.007989,0.0,67510224.5434,0.119356,240 x 240 x 155,1.0 x 1.0 x 1.0 mm,18.6
+T1CE,369,788.31,794.99,0.0,32767.0,0.2826,5.8805,0.005652,0.0,78831068.0379,0.080685,240 x 240 x 155,1.0 x 1.0 x 1.0 mm,18.6
+T2,369,769.85,700.06,-2.0,32767.0,0.4032,6.5943,0.006892,0.0,76707909.1333,0.110782,240 x 240 x 155,1.0 x 1.0 x 1.0 mm,18.6

@@ -1,0 +1,21 @@
+Metric,Value
+Total Patients,10
+Total Normal Patients,5
+Total Pathological Patients,5
+Total MRI Volumes,186
+Number of T1W Scans,76
+Number of T1W GADO Scans,6
+Number of T2W Scans,88
+Number of STIR Scans,13
+Number of Survey/Locator Scans,2
+Other/Special Sequences,1
+Average File Size (MB),1.26
+Largest File Name,S82170_MobiView_eT1W_TSE_20260221100326_405.nii.gz
+Largest File Size (MB),7.47
+Smallest File Name,S82030_eT1W_TSE_CLEAR_20260305081552_702_i00001.nii.gz
+Smallest File Size (MB),0.06
+Total Dataset Size (MB),233.98
+Total Dataset Size (GB),0.228
+Average SNR (Excl. Survey),59127946.5653
+Average RMS Contrast (Excl. Survey),0.7044
+Average Entropy (Excl. Survey),6.8306

@@ -1,0 +1,22 @@
+Metric,Value
+Total Patients,369
+Total MRI Volumes,1845
+Number of T1 Scans,369
+Number of T1CE Scans,369
+Number of T2 Scans,369
+Number of FLAIR Scans,369
+Number of Segmentation Masks,369
+Average File Size (MB),17.11
+Largest File Name,BraTS20_Training_343_flair.nii
+Largest File Size (MB),34.06
+Smallest File Name,BraTS20_Training_001_seg.nii
+Smallest File Size (MB),8.52
+Total Dataset Size (MB),31567.56
+Total Dataset Size (GB),30.828
+High Grade Gliomas (HGG),293
+Low Grade Gliomas (LGG),76
+Unknown Grade Scans,0
+Pathological Scans (Tumour),369
+Healthy Control Scans,0
+Average Tumour Volume (cm³),99.55
+Maximum Tumour Volume (cm³),361.78

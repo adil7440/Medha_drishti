@@ -1,0 +1,3 @@
+Class,Patient_Count,Volume_Count,Mean_Intensity_Avg,Contrast_Avg,Entropy_Avg,Sharpness_Avg,SNR_Avg,Noise_Avg,Edge_Strength_Avg,File_Size_MB_Avg,Dimensions_Variants
+Normal,5,89,621.27,0.7397,6.9191,0.006916,61123192.2677,0.7902,0.208274,1.12,30
+Pathological,5,95,666.88,0.6713,6.7478,0.006624,57258716.3809,9.033,0.205975,1.37,38

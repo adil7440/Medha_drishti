@@ -1,0 +1,126 @@
+/* Professional Clinical Medical Imaging Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e5e7eb;
+}
+
+/* Background */
+.stApp {
+    background-color: #0b0f19;
+}
+
+/* Header Banner */
+.main-header {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+.main-header h1 {
+    color: #f9fafb;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+}
+
+.main-header p {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Clinical Metric Card */
+.metric-card {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-left: 3px solid #0ea5e9;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+}
+
+.metric-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.metric-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #f9fafb;
+    margin: 4px 0;
+}
+
+.metric-sub {
+    font-size: 0.8rem;
+    color: #0ea5e9;
+    margin-top: 2px;
+}
+
+.metric-delta-positive {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #10b981;
+}
+
+.metric-delta-negative {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ef4444;
+}
+
+/* Custom Buttons */
+.stButton > button {
+    background-color: #0284c7 !important;
+    color: #ffffff !important;
+    border: 1px solid #0369a1 !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    padding: 8px 18px !important;
+    transition: background-color 0.15s ease !important;
+}
+
+.stButton > button:hover {
+    background-color: #0369a1 !important;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #0d111d;
+    border-right: 1px solid #1f2937;
+}
+
+.sidebar-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f9fafb;
+    margin-bottom: 2px;
+}
+
+.sidebar-sub {
+    font-size: 0.78rem;
+    color: #6b7280;
+}
+
+/* Dataframe & Tables */
+.stDataFrame {
+    border: 1px solid #1f2937;
+    border-radius: 6px;
+}
+
+/* Section Dividers */
+hr {
+    border-color: #1f2937 !important;
+    margin: 24px 0 !important;
+}

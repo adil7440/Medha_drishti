@@ -1,0 +1,11 @@
+Patient_ID,Patient_Dir,Class,Modalities_Detected,Has_T1W,Has_T2W,Has_STIR,Has_Survey,Total_Files,Total_Size_MB,Missing_Core_Modalities,Status
+SP2,C:\Users\Adil\Desktop\yugma\training_data_spine\Normal Spine MRI Datasets\SP2,Normal,"STIR, Survey, T1W, T2W",True,True,True,True,16,18.24,None,Complete
+SP3,C:\Users\Adil\Desktop\yugma\training_data_spine\Normal Spine MRI Datasets\SP3,Normal,"T1W, T2W",True,True,False,False,34,24.22,None,Complete
+SP5,C:\Users\Adil\Desktop\yugma\training_data_spine\Normal Spine MRI Datasets\SP5,Normal,"STIR, T1W, T2W",True,True,True,False,5,11.12,None,Complete
+SP7,C:\Users\Adil\Desktop\yugma\training_data_spine\Normal Spine MRI Datasets\SP7,Normal,"STIR, T1W, T2W",True,True,True,False,19,18.9,None,Complete
+SP8,C:\Users\Adil\Desktop\yugma\training_data_spine\Normal Spine MRI Datasets\SP8,Normal,"STIR, T1W, T2W",True,True,True,False,16,29.59,None,Complete
+SP12,C:\Users\Adil\Desktop\yugma\training_data_spine\Pathological Spine MRI Datasets\SP12,Pathological,"STIR, T1W, T2W",True,True,True,False,34,37.55,None,Complete
+SP15,C:\Users\Adil\Desktop\yugma\training_data_spine\Pathological Spine MRI Datasets\SP15,Pathological,"STIR, T1W, T2W",True,True,True,False,11,29.44,None,Complete
+SP17,C:\Users\Adil\Desktop\yugma\training_data_spine\Pathological Spine MRI Datasets\SP17,Pathological,"T1W, T2W",True,True,False,False,17,32.84,None,Complete
+SP18,C:\Users\Adil\Desktop\yugma\training_data_spine\Pathological Spine MRI Datasets\SP18,Pathological,"STIR, T1W, T2W",True,True,True,False,21,18.07,None,Complete
+SP19,C:\Users\Adil\Desktop\yugma\training_data_spine\Pathological Spine MRI Datasets\SP19,Pathological,"Survey, T1W, T2W",True,True,False,True,13,14.03,None,Complete
