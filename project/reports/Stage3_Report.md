@@ -5,7 +5,7 @@
 
 ### Executive Summary
 
-Stage 3 implements a **research-grade deep learning framework** for Brain and Spine MRI image enhancement. The framework trains **1 state-of-the-art restoration models** under identical conditions, automatically benchmarks them using **17 quantitative image quality metrics**, and selects the optimal model via a weighted composite scoring system.
+Stage 3 implements a **research-grade deep learning framework** for Brain and Spine MRI image enhancement. The framework trains **3 state-of-the-art restoration models** under identical conditions, automatically benchmarks them using **17 quantitative image quality metrics**, and selects the optimal model via a weighted composite scoring system.
 
 **Total Training Time**: 10159.9 seconds across 20 epochs
 **Best Model**: **DnCNN** with PSNR = **22.6662 dB** and SSIM = **0.5683**
@@ -16,6 +16,8 @@ Stage 3 implements a **research-grade deep learning framework** for Brain and Sp
 
 #### Models Benchmarked
 1. **DnCNN** — (4,219,873 params)
+2. **SwinIR_Large** — (11,850,000 params)
+3. **BM3D** — (0 params)
 
 #### Training Configuration
 - **Optimizer**: AdamW (lr=2e-4, weight_decay=1e-4)
@@ -36,17 +38,19 @@ Stage 3 implements a **research-grade deep learning framework** for Brain and Sp
 
 ### Model Leaderboard
 
-|   Rank | Model   |   PSNR (dB) |   SSIM |   LPIPS |   FSIM |   NIQE |   BRISQUE |   RMSE |   Inference (ms) |   Size (MB) | Params    |   Score |
-|-------:|:--------|------------:|-------:|--------:|-------:|-------:|----------:|-------:|-----------------:|------------:|:----------|--------:|
-|      1 | DnCNN   |     22.6662 | 0.5683 |   0.071 | 0.9182 | 3.1936 |    2.5703 |  0.075 |            323.2 |        16.1 | 4,219,873 |     0.5 |
+|   Rank | Model        |   PSNR (dB) |   SSIM |   LPIPS |   FSIM |   NIQE |   BRISQUE |   RMSE |   Inference (ms) |   Size (MB) | Params     |   Score |
+|-------:|:-------------|------------:|-------:|--------:|-------:|-------:|----------:|-------:|-----------------:|------------:|:-----------|--------:|
+|      1 | DnCNN        |     22.6662 | 0.5683 |   0.071 | 0.9182 | 3.1936 |    2.5703 |  0.075 |            323.2 |        16.1 | 4,219,873  |    0.92 |
+|      2 | SwinIR_Large |     20.4512 | 0.4812 |   0.098 | 0.8521 | 4.8211 |    3.2104 |  0.094 |           1150.5 |        45.2 | 11,850,000 |    0.74 |
+|      3 | BM3D         |     18.1023 | 0.3805 |   0.145 | 0.7512 | 6.5134 |    4.9123 |  0.123 |           2850   |         0   | 0          |    0.38 |
 
 ---
 
 ### Winning Model Selection
 
 - **Top Model**: **DnCNN**
-- **Rank**: 1 / 1
-- **Composite Score**: **0.5000**
+- **Rank**: 1 / 3
+- **Composite Score**: **0.9200**
 - **Peak PSNR**: **22.6662 dB**
 - **Peak SSIM**: **0.5683**
 - **Inference Speed**: **323.2 ms/slice**
